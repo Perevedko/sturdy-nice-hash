@@ -1,10 +1,15 @@
 
 Алгоритм бота на примере монеты VTC (https://www.coinwarz.com/calculators/vertcoin-mining-calculator/)
 
-1.	Определить с помощью API https://www.coinwarz.com/v1/api/documentation сумму в BTC, добываемую в день при Hash Rate = 1000 MH/s, Power = 0, Power Cost = 0, Block Reward 50, Pool Fees = 1, Hardware Costs = 0.
+1.	Определить с помощью API https://www.coinwarz.com/v1/api/documentation сумму в BTC,
+добываемую в день при Hash Rate = 1000 MH/s, Power = 0, Power Cost = 0,
+Block Reward 50, Pool Fees = 1, Hardware Costs = 0.
 http://i.imgur.com/lD5iJKa.png
-API должно подставлять текущую сложность сети (Difficulty) и цену (VTC/BTC), выдавая результат:
+API должно подставлять текущую сложность сети (Difficulty) и цену (VTC/BTC),
+выдавая результат:
 http://i.imgur.com/yMq3WXf.png
-    Нам нужно то, что выдаётся в пункте Daily, то есть 0.0611 BTC. 
-2.	Умножить полученное число (0.0611 BTC) на 0.77 = 0.047. Прикрепить 0.047 в NiceHashBot в качестве максимальной цены к определённому ордеру и обновлять каждые N минут (в зависимости от доступности API)
-3.  Повторить такой же алгоритм для других монет 
+    Нам нужно то, что выдаётся в пункте Daily, то есть 0.0611 BTC.
+2.	Умножить полученное число (0.0611 BTC) на 0.77 = 0.047.
+    Прикрепить 0.047 в NiceHashBot в качестве максимальной цены к определённому
+    ордеру и обновлять каждые N минут (в зависимости от доступности API)
+3.  Повторить такой же алгоритм для других монет
