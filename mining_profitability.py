@@ -1,7 +1,7 @@
 # coding: utf-8
 
 SECONDS_PER_DAY = 60 * 60 * 24
-SUPER_MAGIC_CONSTANT = 2 ** 32
+# SUPER_MAGIC_CONSTANT = 2 ** 32
 
 def profitability(
     hashrate,
